@@ -16,7 +16,7 @@ console.log(`The differnece between c and d is ${c-= d}`);
 
 let e = 15
 let f = 3
-console.log(`Thw prodsuct of e and f is ${e *= f}`);
+console.log(`Thw product of e and f is ${e *= f}`);
 
 //Divide
 
