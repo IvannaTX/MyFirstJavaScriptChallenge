@@ -1,10 +1,12 @@
+//How information is stored using classes:
+//constructor responzsible for all inputs and outouts
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
       this.previousOperandTextElement = previousOperandTextElement
       this.currentOperandTextElement = currentOperandTextElement
       this.clear()
     }
-  
+  //operations buttons 
     clear() {
       this.currentOperand = ''
       this.previousOperand = ''
@@ -29,7 +31,7 @@ class Calculator {
       this.previousOperand = this.currentOperand
       this.currentOperand = ''
     }
-  
+  //compute function to compute the numbers entered
     compute() {
       let computation
       const prev = parseFloat(this.previousOperand)
@@ -85,7 +87,9 @@ class Calculator {
     }
   }
   
-  
+  //button functions & differintiate diff buttons w/ added classes from index
+//"query" selects all in js
+//The following are our constant variables for each different type of button
   const numberButtons = document.querySelectorAll('[data-number]')
   const operationButtons = document.querySelectorAll('[data-operation]')
   const equalsButton = document.querySelector('[data-equals]')

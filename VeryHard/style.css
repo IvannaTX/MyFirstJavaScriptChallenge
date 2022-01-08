@@ -1,25 +1,29 @@
-*, *::before, *::after {
+/*Code along style sheet for calculator; some elements differ since I understood it a different way then the code along video explained*/
+
+*{
     box-sizing: border-box;
-    font-family: Gotham Rounded, sans-serif;
     font-weight: normal;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
   }
-  
+
+  /*Our background color*/
   body {
     padding: 0;
     margin: 0;
     background: linear-gradient(to right, #00AAFF, #00FF6C);
   }
   
-  .calculator-grid {
+  .calc-grid {
     display: grid;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
+    align-self: center;
+    margin: 10%;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
   }
   
-  .calculator-grid > button {
+  .calc-grid > button {
     cursor: pointer;
     font-size: 2rem;
     border: 1px solid white;
@@ -27,7 +31,7 @@
     background-color: rgba(255, 255, 255, .75);
   }
   
-  .calculator-grid > button:hover {
+  .calc-grid > button:hover {
     background-color: rgba(255, 255, 255, .9);
   }
   
@@ -47,7 +51,7 @@
     word-break: break-all;
   }
   
-  .output .previous-operand {
+  .output .prev-operand {
     color: rgba(255, 255, 255, .75);
     font-size: 1.5rem;
   }
