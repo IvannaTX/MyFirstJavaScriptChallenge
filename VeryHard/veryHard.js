@@ -1,5 +1,5 @@
 //How information is stored using classes:
-//constructor responzsible for all inputs and outouts
+//constructor responsible for all inputs and outouts
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
       this.previousOperandTextElement = previousOperandTextElement
@@ -98,6 +98,8 @@ class Calculator {
   const previousOperandTextElement = document.querySelector('[data-previous-operand]')
   const currentOperandTextElement = document.querySelector('[data-current-operand]')
   
+
+ //define classes by using "new+classname" 
   const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
   
   numberButtons.forEach(button => {
